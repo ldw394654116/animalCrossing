@@ -1,12 +1,16 @@
 <template>
-  <div id="app"><ac></ac></div>
+  <div id="app">
+    <ac></ac>
+    <navs></navs>
+  </div>
 </template>
 
 <script>
 import ac from './components/animal-crossing'
+import navs from './components/tools/nav'
 export default {
   name: 'App',
-  components: { ac }
+  components: { ac, navs }
 }
 </script>
 

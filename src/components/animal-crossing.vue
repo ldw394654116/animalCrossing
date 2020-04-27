@@ -1,6 +1,6 @@
 <template>
   <div class="css-animal-crossing">
-    <main>
+    <main v-if="bl">
       <vega></vega>
     </main>
   </div>
@@ -9,6 +9,11 @@
 <script>
 import vega from './tools/Vega'
 export default {
+  data () {
+    return {
+      bl: false
+    }
+  },
   components: {
     vega
   }
@@ -17,7 +22,7 @@ export default {
 
 <style lang="less">
 .css-animal-crossing {
-  max-width: 1400px;
-  margin: auto;
+  width: 100%;
+  max-width: 1400px;  
 }
 </style>
