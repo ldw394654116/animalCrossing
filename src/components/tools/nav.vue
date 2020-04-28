@@ -49,6 +49,12 @@ export default {
           icon: '3',
           bgcolor: 'gray',
           key: 'c'
+        },
+        {
+          label: '3',
+          icon: '3',
+          bgcolor: 'gray',
+          key: 'c'
         }
       ]
     }
@@ -67,12 +73,13 @@ export default {
     },
     odd (jdx, idx) {
       // console.log(jdx, idx)
-      const key = (idx - 1) / 2 === jdx ? 0.35 - (jdx - 1) * 0.2:0.25
-      // const key = (idx - 1) / 2 === jdx ? 0.35:0.25
+      // const key = idx%2 !== 0 && (idx - 1) / 2 === jdx ? 0.35 - (jdx - 1) * 0.2:0.25
+      // const key = 0.35 - (jdx - 1) * 0.2
+      // const key = 1 / idx
       return {
         position: 'absolute',
-        top:  (idx / 2 - key) * this.baseWH + 'px',
-        left:  (idx / 2 - key) * this.baseWH + 'px'
+        top:  (idx / 2) * this.baseWH + 'px',
+        left:  (idx / 2) * this.baseWH + 'px'
       }
     }
   }

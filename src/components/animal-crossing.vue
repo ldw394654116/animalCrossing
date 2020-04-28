@@ -11,7 +11,7 @@ import vega from './tools/Vega'
 export default {
   data () {
     return {
-      bl: false
+      bl: true
     }
   },
   components: {

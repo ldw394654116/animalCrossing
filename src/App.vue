@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ac></ac>
-    <navs></navs>
+    <navs v-if="false"></navs>
   </div>
 </template>
 
