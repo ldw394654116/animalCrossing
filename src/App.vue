@@ -1,16 +1,12 @@
 <template>
-  <div id="app">
-    <ac></ac>
-    <navs v-if="false"></navs>
-  </div>
+  <div id="app"><idx></idx></div>
 </template>
 
 <script>
-import ac from './components/animal-crossing'
-import navs from './components/tools/nav'
+import idx from './main/index'
 export default {
   name: 'App',
-  components: { ac, navs }
+  components: { idx }
 }
 </script>
 
@@ -21,6 +17,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px;  
+}
+* {
+  box-sizing: border-box;
 }
 </style>
