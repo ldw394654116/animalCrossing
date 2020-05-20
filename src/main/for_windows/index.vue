@@ -18,11 +18,12 @@ export default {
 
   data () {
     return {
-      funcName: 'food'
+      funcName: ''
     }
   },
 
   mounted () {
+    this.funcName = sessionStorage.getItem('funcName') || 'sports'
     this.navsFun()
   },
 
@@ -38,6 +39,7 @@ export default {
     },
 
     exchanges (funcName) {
+      sessionStorage.setItem('funcName', funcName)
       this.funcName = funcName
     }
   }
